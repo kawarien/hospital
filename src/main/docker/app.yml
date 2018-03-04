@@ -1,0 +1,14 @@
+version: '2'
+services:
+    db_hospital-app:
+        image: db_hospital
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:mysql://db_hospital-mysql:3306/db_hospital?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+    db_hospital-mysql:
+        extends:
+            file: mysql.yml
+            service: db_hospital-mysql

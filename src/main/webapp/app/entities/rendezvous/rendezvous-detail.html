@@ -1,0 +1,31 @@
+
+<div>
+    <h2><span data-translate="dbHospitalApp.rendezvous.detail.title">Rendezvous</span> {{vm.rendezvous.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="dbHospitalApp.rendezvous.description">Description</span></dt>
+        <dd>
+            <span>{{vm.rendezvous.description}}</span>
+        </dd>
+        <dt><span data-translate="dbHospitalApp.rendezvous.date">Date</span></dt>
+        <dd>
+            <span>{{vm.rendezvous.date | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span data-translate="dbHospitalApp.rendezvous.user">User</span></dt>
+        <dd>
+            {{vm.rendezvous.user.login}}
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="rendezvous-detail.edit({id:vm.rendezvous.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

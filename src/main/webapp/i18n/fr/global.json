@@ -1,12 +1,17 @@
 {
     "global": {
-        "title": "Db_hospital",
+        "title": "Accueil",
         "browsehappy": "Vous utilisez un <strong>ancien</strong> navigateur. Veuillez <a href=\"http://browsehappy.com/?locale=fr\">mettre à jour votre navigateur</a> pour une meilleure expérience.",
         "menu": {
             "home": "Accueil",
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entités",
+                "patient": "Patient",
+                "rendezvous": "Rendezvous",
+                "consultation": "Consultation",
+                "facture": "Facture",
+                "aide": "Aide",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

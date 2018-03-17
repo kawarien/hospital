@@ -1,0 +1,23 @@
+{
+    "dbHospitalApp": {
+        "consultation" : {
+            "home": {
+                "title": "Consultations",
+                "createLabel": "Créer un nouveau Consultation",
+                "createOrEditLabel": "Créer ou éditer un Consultation"
+            },
+            "created": "Un nouveau Consultation a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Consultation avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Consultation avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Consultation {{ id }} ?"
+            },
+            "detail": {
+                "title": "Consultation"
+            },
+            "prescription": "Prescription",
+            "date": "Date",
+            "user": "User"
+        }
+    }
+}

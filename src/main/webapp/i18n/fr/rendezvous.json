@@ -1,0 +1,23 @@
+{
+    "dbHospitalApp": {
+        "rendezvous" : {
+            "home": {
+                "title": "Rendezvous",
+                "createLabel": "Créer un nouveau Rendezvous",
+                "createOrEditLabel": "Créer ou éditer un Rendezvous"
+            },
+            "created": "Un nouveau Rendezvous a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Rendezvous avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Rendezvous avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Rendezvous {{ id }} ?"
+            },
+            "detail": {
+                "title": "Rendezvous"
+            },
+            "description": "Description",
+            "date": "Date",
+            "user": "User"
+        }
+    }
+}

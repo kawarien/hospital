@@ -13,6 +13,8 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.css">
     <!-- endinject -->
     <!-- endbuild -->
     <!-- build:css content/css/main.css -->
@@ -25,7 +27,7 @@
     <!--[if lt IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <page-ribbon></page-ribbon>
+    <!--<page-ribbon></page-ribbon>-->  
     <div ui-view="navbar" ng-cloak></div>
     <div class="container">
         <div class="well" ui-view="content">
@@ -33,7 +35,7 @@
         </div>
 
         <div class="footer" ng-cloak>
-            <p data-translate="footer">This is your footer</p>
+            <p data="footer">Copyright © 2018 - Hospital managment</p>
         </div>
     </div>
     <noscript>
@@ -63,6 +65,8 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/messageformat/messageformat.js"></script>
     <script src="bower_components/json3/lib/json3.js"></script>
+    <script src="bower_components/arrive/src/arrive.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-aria/angular-aria.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
@@ -81,6 +85,8 @@
     <script src="bower_components/bootstrap-ui-datetime-picker/dist/datetime-picker.js"></script>
     <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
     <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+    <script src="bower_components/bootstrap-material-design/dist/js/material.js"></script>
+    <script src="bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
 
@@ -106,7 +112,37 @@
     <script src="app/layouts/error/error.state.js"></script>
     <script src="app/home/home.state.js"></script>
     <script src="app/home/home.controller.js"></script>
+    <script src="app/entities/rendezvous/rendezvous-dialog.controller.js"></script>
+    <script src="app/entities/rendezvous/rendezvous-detail.controller.js"></script>
+    <script src="app/entities/rendezvous/rendezvous-delete-dialog.controller.js"></script>
+    <script src="app/entities/rendezvous/rendezvous.state.js"></script>
+    <script src="app/entities/rendezvous/rendezvous.service.js"></script>
+    <script src="app/entities/rendezvous/rendezvous.controller.js"></script>
+    <script src="app/entities/patient/patient-dialog.controller.js"></script>
+    <script src="app/entities/patient/patient-detail.controller.js"></script>
+    <script src="app/entities/patient/patient-delete-dialog.controller.js"></script>
+    <script src="app/entities/patient/patient.state.js"></script>
+    <script src="app/entities/patient/patient.service.js"></script>
+    <script src="app/entities/patient/patient.controller.js"></script>
+    <script src="app/entities/facture/facture-dialog.controller.js"></script>
+    <script src="app/entities/facture/facture-detail.controller.js"></script>
+    <script src="app/entities/facture/facture-delete-dialog.controller.js"></script>
+    <script src="app/entities/facture/facture.state.js"></script>
+    <script src="app/entities/facture/facture.service.js"></script>
+    <script src="app/entities/facture/facture.controller.js"></script>
     <script src="app/entities/entity.state.js"></script>
+    <script src="app/entities/consultation/consultation-dialog.controller.js"></script>
+    <script src="app/entities/consultation/consultation-detail.controller.js"></script>
+    <script src="app/entities/consultation/consultation-delete-dialog.controller.js"></script>
+    <script src="app/entities/consultation/consultation.state.js"></script>
+    <script src="app/entities/consultation/consultation.service.js"></script>
+    <script src="app/entities/consultation/consultation.controller.js"></script>
+    <script src="app/entities/aide/aide-dialog.controller.js"></script>
+    <script src="app/entities/aide/aide-detail.controller.js"></script>
+    <script src="app/entities/aide/aide-delete-dialog.controller.js"></script>
+    <script src="app/entities/aide/aide.state.js"></script>
+    <script src="app/entities/aide/aide.service.js"></script>
+    <script src="app/entities/aide/aide.controller.js"></script>
     <script src="app/components/util/truncate-words.filter.js"></script>
     <script src="app/components/util/truncate-characters.filter.js"></script>
     <script src="app/components/util/sort-by.directive.js"></script>
@@ -145,6 +181,7 @@
     <script src="app/blocks/config/localstorage.config.js"></script>
     <script src="app/blocks/config/http.config.js"></script>
     <script src="app/blocks/config/compile.config.js"></script>
+    <script src="app/blocks/config/bootstrap-material.config.js"></script>
     <script src="app/blocks/config/alert.config.js"></script>
     <script src="app/app.state.js"></script>
     <script src="app/app.constants.js"></script>

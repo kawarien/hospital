@@ -1,0 +1,75 @@
+<div>
+    <h2 data-translate="dbHospitalApp.aide.home.title">Aides</h2>
+    <jhi-alert></jhi-alert>
+    <!--<div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="aide.new" has-authority="ROLE_ADMIN">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  data-translate="dbHospitalApp.aide.home.createLabel">
+                        Create new Aide
+                    </span>
+                </button>
+            </div>
+        </div>-->
+    </div>
+    <br/> <!--
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span data-translate="global.field.id">ID</span></th>
+                    <th><span data-translate="dbHospitalApp.aide.description">Description</span></th>
+                    <th><span data-translate="dbHospitalApp.aide.user">User</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="aide in vm.aides track by aide.id">
+                    <td><a ui-sref="aide-detail({id:aide.id})">{{aide.id}}</a></td>
+                    <td>{{aide.description}}</td>
+                    <td>
+                        {{aide.user.login}}
+                    </td>
+                    <td class="text-right" has-authority="ROLE_ADMIN">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="aide-detail({id:aide.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="aide.edit({id:aide.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="aide.delete({id:aide.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>-->
+    
+    <p class="lead" data="home.subtitle">
+Pour une  prise de <strong>rendez-vous</strong><br>
+
+Cliquez sur la rubrique <strong>« Pages ensuite sur Rendezvous »</strong>
+Remplissez tous les renseignements demandés dans les cases puis enregistrez
+</p>
+
+<p class="lead" data="home.subtitle">Pour consulter vos <strong>consultation et/ou Facture:<br></strong>
+
+Cliquez sur la rubrique <strong>« Pages ensuite sur Consultation et/ou Facture »</strong>
+</p>
+
+</p>
+
+</div>

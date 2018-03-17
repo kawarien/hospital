@@ -1,0 +1,22 @@
+{
+    "dbHospitalApp": {
+        "aide" : {
+            "home": {
+                "title": "Aides",
+                "createLabel": "Créer un nouveau Aide",
+                "createOrEditLabel": "Créer ou éditer un Aide"
+            },
+            "created": "Un nouveau Aide a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Aide avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Aide avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Aide {{ id }} ?"
+            },
+            "detail": {
+                "title": "Aide"
+            },
+            "description": "Description",
+            "user": "User"
+        }
+    }
+}
